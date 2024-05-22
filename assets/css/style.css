@@ -1,35 +1,121 @@
+header {
+    position: relative;
+    height: 300px;
+    background-image: linear-gradient(#73a9e7, rgba(204, 133, 0, 0.6))
+  }
+  
+  h1 {
+    padding: 100px 0;
+    font: 44px "Arial";
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+  }
+  
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+  
+  @media (max-width: 699px) {
+    .svg--lg {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .svg--sm {
+      display: none;
+    }
+  }
+  
+
 /* rezise profile picture */
 .about img {
     width: 260px;
     height: auto;
-    vertical-align: middle;
-    border: 10px solid #73a9e7;
+    vertical-align: left;
     border-radius: 130px;
+
 }
 
 .about p {
     font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
-.header {
-    background-image: linear-gradient(#73a9e7, rgba(24, 0, 43, 0.6));
+
+.portfolio header  {
+    background-image: linear-gradient(#73a9e7, rgba(204, 133, 0, 0.6));
 }
+
+header nav {
+    display: flex;
+    justify-content: end;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    position: fixed;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: linear-gradient rgba(204, 133, 0, 0.6);
+    color: rgba(204, 133, 0, 0.6) ;
+    border-radius: 5px;
+  }
 
 .name
 {
-    color: #f8f8f8fd;
-    
+    color: #f8f8f8fd;  
 }
 
 .header li {
     list-style-type: none;
     text-align: right;
-    display: inline;
-    
+    display: inline;   
 }
 
+.portfolio {
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+  }
+  
+  .portfolio header {
+    padding: 20px;
+    border-style: dashed;
+  }
+  
+  .portfolio p {
+    text-align: center;
+    border-style: dashed;
+  }
+  
 .footer {
     text-align: center;
+}
+
+.footer p {
+    border: none;
 }
 
 .contact {
