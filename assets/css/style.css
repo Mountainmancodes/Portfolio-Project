@@ -9,7 +9,7 @@ header {
     font: 44px "Arial";
     text-align: center;
   }
-  
+
   header h1 {
     color: white;
   }
@@ -56,7 +56,9 @@ header {
 
 .portfolio header  {
     background-image: linear-gradient(#73a9e7, rgba(204, 133, 0, 0.6));
+    background-size: cover;
 }
+
 
 header nav {
     display: flex;
