@@ -35,7 +35,7 @@ header {
     }
   }
 
-  .portfolio header  {
+  .portfolio  {
     background-image: linear-gradient(#73a9e7, rgba(204, 133, 0, 0.6));
     background-size: cover;
 }
@@ -44,13 +44,13 @@ header {
 header nav {
   display: flex;
   justify-content: end;
+  margin-top: 5%;
 }
 
 header nav ul {
   display: flex;
   gap: 40px;
   list-style: none;
-  position: fixed;
 }
 
 header nav ul li a {
@@ -101,12 +101,36 @@ header nav ul li a:hover {
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  
-  .portfolio header {
+
+
+  .portfolio1 img {
     padding: 20px;
-    border-style: dashed;
+    border-style: ridge;
+    display: flex;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    border-color: rgba(204, 133, 0, 0.6);
+    background-color: #73a9e7;
+    flex: 1;
+  }
+
+  .portfolio2 img{
+    padding: 20px;
+    border-style: ridge;
+    display: flex;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border-color: rgba(204, 133, 0, 0.6);
+    background-color: #73a9e7;
+    flex: 1;
   }
   
   .portfolio p {
