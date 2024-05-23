@@ -1,3 +1,5 @@
+
+/* Header */
 header {
     position: relative;
     height: 300px;
@@ -32,9 +34,50 @@ header {
       display: none;
     }
   }
+
+  .portfolio header  {
+    background-image: linear-gradient(#73a9e7, rgba(204, 133, 0, 0.6));
+    background-size: cover;
+}
+
+/* Nav Bar  */
+header nav {
+  display: flex;
+  justify-content: end;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  position: fixed;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+  background-color: linear-gradient rgba(204, 133, 0, 0.6);
+  color: rgba(204, 133, 0, 0.6) ;
+  border-radius: 5px;
+}
+
+.name
+{
+  color: #f8f8f8fd;  
+}
+
+.header li {
+  list-style-type: none;
+  text-align: right;
+  display: inline;   
+}
   
 
-/* rezise profile picture */
+/*  profile picture & about me */
 .about img {
     width: 260px;
     height: auto;
@@ -53,48 +96,7 @@ header {
     unicode-bidi: isolate;
 }
 
-
-.portfolio header  {
-    background-image: linear-gradient(#73a9e7, rgba(204, 133, 0, 0.6));
-    background-size: cover;
-}
-
-
-header nav {
-    display: flex;
-    justify-content: end;
-  }
-  
-  header nav ul {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    position: fixed;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-  }
-  
-  header nav ul li a:hover {
-    background-color: linear-gradient rgba(204, 133, 0, 0.6);
-    color: rgba(204, 133, 0, 0.6) ;
-    border-radius: 5px;
-  }
-
-.name
-{
-    color: #f8f8f8fd;  
-}
-
-.header li {
-    list-style-type: none;
-    text-align: right;
-    display: inline;   
-}
-
+/* Portfolio */
 .portfolio {
     border-width: 1px;
     border-radius: 10px;
@@ -112,6 +114,7 @@ header nav {
     border-style: dashed;
   }
   
+  /* Footer  */
 .footer {
     text-align: center;
 }
@@ -120,6 +123,7 @@ header nav {
     border: none;
 }
 
+/* Contact  */
 .contact {
     text-align: center;
     list-style-type: none;
