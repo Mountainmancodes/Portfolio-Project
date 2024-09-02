@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This portfolio website showcases my skills, experiences, and projects as a software engineer and mountain enthusiast. Initially created as a representation of learned knowledge from the CSS unit, it has now evolved into a dynamic React-based application.
+This portfolio website showcases my skills, experiences, and projects as a student. Initially created as a representation of learned knowledge from the CSS unit, it has now evolved into a dynamic React-based application.
 
 ## Features
 
