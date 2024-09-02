@@ -11,7 +11,7 @@ function Sidebar() {
       <h1 className="name">Joshua Hernandez</h1>
       <p className="title">Christian | Father | Software Engineer</p>
       <div className="buttons">
-        <button className="resume-button" onClick={handleResumeClick}>View Resume</button>
+        <button className="resume-button" onClick={handleResumeClick}>Resume</button>
       </div>
       <div className="separator"></div>
       <div className="skills">
