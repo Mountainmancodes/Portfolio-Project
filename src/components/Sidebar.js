@@ -3,11 +3,13 @@ import React from 'react';
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <img src="./public/images/image.png" alt="Joshua" className="Avatar" />
+      <img src="/assets/images/image.png" alt="Joshua" className="avatar" />
       <h1 className="name">Joshua Hernandez</h1>
       <p className="title">Christian | Father | Software Engineer</p>
       <div className="buttons">
-        <button className="resume-button">Resume</button>
+        <a href="/assets/images/IT Systems Analyst Associate Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <button className="resume-button">Resume</button>
+        </a>
       </div>
       <div className="separator"></div>
       <div className="skills">
