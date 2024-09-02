@@ -3,9 +3,9 @@ import React from 'react';
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <img src="public\assets\images\image.png" alt="Joshua Avatar" className="avatar" />
+      <img src="./public/images/image.png" alt="Joshua" className="Avatar" />
       <h1 className="name">Joshua Hernandez</h1>
-      <p className="title">Christian | Father | Full-Stack Mobile Developer</p>
+      <p className="title">Christian | Father | Software Engineer</p>
       <div className="buttons">
         <button className="resume-button">Resume</button>
       </div>
