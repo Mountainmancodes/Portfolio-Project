@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Sidebar() {
+  const [showResume, setShowResume] = useState(false);
+
+  const handleResumeClick = () => {
+    setShowResume(!showResume);
+  };
+
   return (
     <aside className="sidebar">
       <img src="/assets/images/image.png" alt="Joshua" className="avatar" />
       <h1 className="name">Joshua Hernandez</h1>
       <p className="title">Christian | Father | Software Engineer</p>
       <div className="buttons">
-        <a href="/assets/images/IT Systems Analyst Associate Resume.pdf" target="_blank" rel="noopener noreferrer">
-          <button className="resume-button">Resume</button>
-        </a>
+        <button className="resume-button" onClick={handleResumeClick}>Resume</button>
       </div>
       <div className="separator"></div>
       <div className="skills">
@@ -26,6 +30,16 @@ function Sidebar() {
           <p>SQL, MongoDB, PostgreSQL</p>
         </div>
       </div>
+      {showResume && (
+        <div className="resume-section">
+          <iframe
+            src="/assets/images/IT Systems Analyst Associate Resume.pdf"
+            width="100%"
+            height="600px"
+            title="Joshua Hernandez's Resume"
+          ></iframe>
+        </div>
+      )}
     </aside>
   );
 }

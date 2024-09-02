@@ -5,7 +5,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact'; // Import the Contact component
-import Footer from './components/Footer';
+import Footer from './components/Footer'; 
 import './App.css';
 
 function App() {
@@ -21,11 +21,11 @@ function App() {
             {activeTab === 'Experience' && <Experience />}
             {activeTab === 'Projects' && <Projects />}
             {activeTab === 'Education' && <Education />}
-            {activeTab === 'Contact' && <Contact />} {/* Add Contact tab */}
+            {activeTab === 'Contact' && <Contact />}
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer /> 
     </div>
   );
 }
