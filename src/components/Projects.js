@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import projectImages from '../data/projectImages'; // We'll create this file
+import projectImages from '../data/projectImages'; 
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -13,7 +13,7 @@ function Projects() {
         // Combine GitHub data with local image data
         const projectsWithImages = data.map(repo => ({
           ...repo,
-          imageUrl: projectImages[repo.name] || '/images/placeholder.png' // Use a placeholder if no image is specified
+          imageUrl: projectImages[repo.name] || '/images/placeholder.png'
         }));
         
         setProjects(projectsWithImages);
