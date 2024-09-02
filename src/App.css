@@ -12,9 +12,11 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   background-image: url('/public/assets/images/mountain.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center center; /* Keep the image centered */
+  background-attachment: fixed; /* Keep the background fixed to avoid distortion when scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: 100% auto; /* Ensures the image width is 100% and height adjusts to maintain aspect ratio */
   margin: 0;
   padding: 0;
 }
@@ -154,7 +156,7 @@ body {
 .tab-button {
   background-color: transparent;
   border: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin: 0 15px;
   cursor: pointer;
   font-size: 1rem;
@@ -167,15 +169,6 @@ body {
   align-items: center;
   text-align: center;
   white-space: nowrap;
-}
-
-.tab-button i {
-  margin-right: 12px;
-  color: var(--primary-color);
-}
-
-.tab-button svg {
-  margin-right: 10px;
 }
 
 .tab-button.active {
@@ -293,7 +286,7 @@ body {
     padding: 20px;
     box-shadow: none;
     border-radius: 0;
-    width: 100%; /* Ensures content area matches sidebar width */
+    width: 100%;
   }
 
   .projects-grid {
@@ -306,11 +299,14 @@ body {
 
   .tab-navigation {
     flex-direction: column;
+    padding: 10px 15px;
   }
 
   .tab-button {
     margin-bottom: 10px;
     width: 100%;
+    font-size: 1rem;
+    padding: 12px 20px;
   }
 
   .avatar {
