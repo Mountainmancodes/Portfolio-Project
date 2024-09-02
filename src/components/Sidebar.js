@@ -3,7 +3,7 @@ import React from 'react';
 function Sidebar() {
   return (
     <aside className="sidebar">
-      <img src="/images/image.png" alt="Joshua Avatar" className="avatar" />
+      <img src="public\assets\images\image.png" alt="Joshua Avatar" className="avatar" />
       <h1 className="name">Joshua Hernandez</h1>
       <p className="title">Christian | Father | Full-Stack Mobile Developer</p>
       <div className="buttons">
