@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaGithub } from 'react-icons/fa'; // Removed LinkedIn icon import
+import { FaEnvelope, FaGithub } from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -13,7 +13,7 @@ function Contact() {
         <div className="contact-item">
           <FaGithub size={24} />
           <a href="https://github.com/mountainmancodes" target="_blank" rel="noopener noreferrer" className="contact-link">
-            github.com/yourusername
+            github.com/mountainmancodes
           </a>
         </div>
       </div>

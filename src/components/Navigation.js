@@ -3,10 +3,10 @@ import { FaBriefcase, FaGithub, FaGraduationCap, FaEnvelope } from 'react-icons/
 
 function Navigation({ activeTab, setActiveTab }) {
   const tabs = [
-    { name: 'Experience', emoji: <FaBriefcase /> },
-    { name: 'Projects', emoji: <FaGithub /> },
-    { name: 'Education', emoji: <FaGraduationCap /> },
-    { name: 'Contact', emoji: <FaEnvelope /> },  // Add the Contact tab
+    { name: 'Experience', icon: <FaBriefcase /> },
+    { name: 'Projects', icon: <FaGithub /> },
+    { name: 'Education', icon: <FaGraduationCap /> },
+    { name: 'Contact', icon: <FaEnvelope /> },
   ];
 
   return (
@@ -17,7 +17,7 @@ function Navigation({ activeTab, setActiveTab }) {
           className={`tab-button ${activeTab === tab.name ? 'active' : ''}`}
           onClick={() => setActiveTab(tab.name)}
         >
-          {tab.emoji} {tab.name}
+          {tab.icon} {tab.name}
         </button>
       ))}
     </nav>

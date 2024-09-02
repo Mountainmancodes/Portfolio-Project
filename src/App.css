@@ -65,6 +65,7 @@ body {
   object-fit: cover;
   display: block;
   margin: 0 auto 1rem;
+  background-color: #f0f0f0; /* Fallback color */
 }
 
 .sidebar h1 {
@@ -178,6 +179,10 @@ body {
   align-items: center;
   text-align: center;
   white-space: nowrap;
+}
+
+.tab-button svg {
+  margin-right: 8px; /* Add space between icon and text */
 }
 
 .tab-button.active {
@@ -307,6 +312,29 @@ body {
 
 #contact a:hover {
   text-decoration: underline;
+}
+
+/* Contact component styles */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
