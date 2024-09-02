@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import projectImages from '../data/projectImages'; 
+import projectImages from '../data/projectImages';
 
 function Projects() {
   const [projects, setProjects] = useState([]);
-  const [visibleProjects, setVisibleProjects] = useState(6);
 
   useEffect(() => {
     const fetchRepos = async () => {
@@ -26,15 +25,11 @@ function Projects() {
     fetchRepos();
   }, []);
 
-  const loadMore = () => {
-    setVisibleProjects(prevVisible => prevVisible + 6);
-  };
-
   return (
     <section id="projects">
       <h2>Projects</h2>
       <div className="projects-grid">
-        {projects.slice(0, visibleProjects).map((project) => (
+        {projects.map((project) => (
           <div key={project.id} className="project-card">
             <img
               src={project.imageUrl}
@@ -51,11 +46,6 @@ function Projects() {
           </div>
         ))}
       </div>
-      {visibleProjects < projects.length && (
-        <button className="load-more-btn" onClick={loadMore}>
-          Load More Projects
-        </button>
-      )}
     </section>
   );
 }

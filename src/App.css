@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
-  background-image: url('/public/assets/images/mountain.jpg');
+  background-image: url('./assets/images/mountain.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -65,7 +65,7 @@ body {
   object-fit: cover;
   display: block;
   margin: 0 auto 1rem;
-  background-color: #f0f0f0; /* Fallback color */
+  background-color: #f0f0f0;
 }
 
 .sidebar h1 {
@@ -108,20 +108,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 100%; /* Ensure full-width for the button */
+  width: 100%;
 }
 
 .resume-button:hover {
   background-color: #6b8e23;
-}
-
-.resume-section {
-  margin-top: 20px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .separator {
@@ -182,7 +173,7 @@ body {
 }
 
 .tab-button svg {
-  margin-right: 8px; /* Add space between icon and text */
+  margin-right: 8px;
 }
 
 .tab-button.active {
@@ -212,9 +203,23 @@ body {
   color: var(--text-color);
 }
 
+/* Updated Projects Styles */
+#projects {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
@@ -234,33 +239,39 @@ body {
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
 }
 
 .project-info {
-  padding: 20px;
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-info h3 {
   margin-top: 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
 }
 
 .project-info p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  flex-grow: 1;
+  margin-bottom: 10px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 8px 15px;
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .btn:hover {
@@ -314,7 +325,6 @@ body {
   text-decoration: underline;
 }
 
-/* Contact component styles */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -365,10 +375,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
-    margin-bottom: 20px;
-  }
-
   .tab-navigation {
     flex-direction: column;
     padding: 10px 15px;
@@ -393,38 +399,5 @@ body {
   .tab-content {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .resume-section {
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .load-more-btn {
-    display: block;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .load-more-btn:hover {
-    background-color: var(--secondary-color);
-  }
-  
-  /* Ensure the projects grid looks good with pagination */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin-bottom: 20px;
   }
 }
