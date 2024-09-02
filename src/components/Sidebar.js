@@ -21,11 +21,11 @@ function Sidebar() {
         </div>
         <div className="skill-category">
           <h3>Programming Languages</h3>
-          <p>TypeScript, JavaScript, Node.js</p>
+          <p>TypeScript, JavaScript</p>
         </div>
         <div className="skill-category">
           <h3>Backend & Databases</h3>
-          <p>SQL, MongoDB, PostgreSQL, Express</p>
+          <p>MongoDB, PostgreSQL, Express, Node.js</p>
         </div>
       </div>
     </aside>
