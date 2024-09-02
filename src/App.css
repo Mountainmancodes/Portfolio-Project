@@ -203,7 +203,7 @@ body {
   color: var(--text-color);
 }
 
-/* Updated Projects Styles */
+
 #projects {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -219,8 +219,20 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .project-card {
