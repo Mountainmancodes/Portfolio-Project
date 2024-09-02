@@ -28,9 +28,9 @@ This portfolio website showcases my skills, experiences, and projects as a stude
 ## Technologies Used
 
 - React.js
-- HTML5
+- HTML
 - CSS3
-- JavaScript (ES6+)
+- JavaScript
 
 ## Getting Started
 
