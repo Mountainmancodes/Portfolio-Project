@@ -4,7 +4,8 @@ import Navigation from './components/Navigation';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Education from './components/Education';
-import Footer from './components/Footer'; // Import the Footer component
+import Contact from './components/Contact'; // Import the Contact component
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
             {activeTab === 'Experience' && <Experience />}
             {activeTab === 'Projects' && <Projects />}
             {activeTab === 'Education' && <Education />}
+            {activeTab === 'Contact' && <Contact />} {/* Add Contact tab */}
           </div>
         </div>
       </div>
-      <Footer /> {/* Add the Footer component here */}
+      <Footer />
     </div>
   );
 }
