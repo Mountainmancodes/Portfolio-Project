@@ -5,7 +5,7 @@ function Sidebar() {
     <aside className="sidebar">
       <img src="/images/image.png" alt="Joshua Avatar" className="avatar" />
       <h1 className="name">Joshua Hernandez</h1>
-      <p className="title">Father | Full-Stack Mobile Developer | Christian</p>
+      <p className="title">Christian | Father | Full-Stack Mobile Developer</p>
       <div className="buttons">
         <button className="resume-button">Resume</button>
       </div>

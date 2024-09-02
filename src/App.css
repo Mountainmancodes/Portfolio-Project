@@ -12,6 +12,7 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
 }
 
 html, body {
@@ -22,12 +23,16 @@ html, body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                    url('/public/assets/images/mountain.jpg'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url('/public/assets/images/mountain.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: var(--background-color);
   box-sizing: border-box;
 }
@@ -304,5 +309,19 @@ html, body {
 
   .project-card {
     margin-bottom: 20px;
+  }
+
+  .tab-navigation {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
   }
 }
