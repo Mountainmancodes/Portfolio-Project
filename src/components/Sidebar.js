@@ -9,7 +9,7 @@ function Sidebar() {
     <aside className="sidebar">
       <img src="./assets/images/image.png" alt="Joshua" className="avatar" />
       <h1 className="name">Joshua Hernandez</h1>
-      <p className="title">Father | Software Engineer | Techno-Optimist</p>
+      <p className="title">Father | Software Engineer | Techno-Optimist </p>
       <div className="buttons">
         <button className="resume-button" onClick={handleResumeClick}>Resume</button>
       </div>
